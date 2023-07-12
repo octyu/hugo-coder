@@ -6,7 +6,7 @@
           {{- i18n .Data.Plural 1 | title -}}
           {{- print ": " -}}
         {{- end -}}
-        {{ "Posts" }}
+        {{- i18n (lower .Title) | default .Title | title -}}
       </a>
     </h1>
   </header>
